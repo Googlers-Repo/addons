@@ -6,6 +6,8 @@
     "bash": "./bin/bash",
     "neofetch": "./bin/neofetch",
     "sysfetch": "./bin/neofetch",
+    "transfer": "./bin/transfer",
+    "wpd": "./bin/wpd",
     "zip": "./bin/zip",
     "wget": "./bin/wget",
     "xh": "./bin/xh",
