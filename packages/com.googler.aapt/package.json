@@ -1,0 +1,16 @@
+{
+  "name": "com.googler.aapt",
+  "version": "1.0.0",
+  "bin": {
+    "aapt": "./src/aapt"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "aapt"
+  ],
+  "author": "Der_Googler"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.googler.bash",
+  "version": "1.0.1",
+  "bin": {
+    "bash": "./src/bash"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "bash"
+  ],
+  "author": "Der_Googler"
+}

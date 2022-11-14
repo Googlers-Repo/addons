@@ -1,0 +1,17 @@
+{
+  "name": "com.googler.xh",
+  "version": "1.0.0",
+  "bin": {
+    "xh": "./src/xh",
+    "xhs": "./src/xh"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "xh"
+  ],
+  "author": "Der_Googler"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "com.googler.netutils",
+  "version": "1.0.0",
+  "bin": {
+    "wpd": "./src/wpd",
+    "transfer": "./src/transfer"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "netutils"
+  ],
+  "author": "Der_Googler"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.googler.zip",
+  "version": "1.0.0",
+  "bin": {
+    "zip": "./src/zip"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "zip"
+  ],
+  "author": "Der_Googler"
+}

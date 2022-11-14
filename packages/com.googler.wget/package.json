@@ -1,0 +1,16 @@
+{
+  "name": "com.googler.wget",
+  "version": "1.0.0",
+  "bin": {
+    "wget": "./src/wget"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "wget"
+  ],
+  "author": "Der_Googler"
+}
