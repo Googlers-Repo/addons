@@ -23,8 +23,16 @@ const os = require("os");
 const fs = require("fs");
 const convert = require("xml-js");
 
-if (os.userInfo().username != "root") {
-  console.log("Root required!");
+const isNotRoot = os.userInfo().username != "root"
+const isNotAndroid = os.platform() != "android"  
+
+if (isNotAndroid) {
+  console.log("This binary requires an \x1b[32mAndroid\x1b[0m!");
+  process.exit(1);
+}
+
+if (isNotRoot) {
+  console.log("\x1b[32mRoot\x1b[0m required!");
   process.exit(1);
 }
 
