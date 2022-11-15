@@ -1,6 +1,6 @@
 {
   "name": "com.googler.netutils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "wpd": "./src/wpd",
     "transfer": "./src/transfer"

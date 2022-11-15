@@ -1,6 +1,6 @@
 {
   "name": "com.googler.neofetch",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "🖼️ A command-line system information tool written in bash 3.2+",
   "bin": {
     "neofetch": "./src/neofetch",
@@ -18,6 +18,6 @@
   "license": "MIT",
   "homepage": "https://github.com/dylanaraps/neofetch",
   "dependencies": {
-    "com.googler.bash": "^1.0.0"
+    "com.googler.bash": "^1.0.1"
   }
 }
