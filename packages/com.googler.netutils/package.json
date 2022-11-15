@@ -1,6 +1,6 @@
 {
   "name": "com.googler.netutils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {
     "wpd": "./src/wpd",
     "transfer": "./src/transfer"
@@ -13,5 +13,8 @@
     "superuser",
     "netutils"
   ],
-  "author": "Der_Googler"
+  "author": "Der_Googler",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
 }

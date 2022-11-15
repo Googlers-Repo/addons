@@ -1,19 +1,74 @@
-#!/system/bin/env sh
+#!/system/bin/env node
 
-[ "$(whoami)" != "root" ] && { echo "root required"; exit 1; }
-configs=( /data/misc/wifi/WifiConfigStore.xml /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml )
-for z in ${configs[@]}; do
-  if [ -f $z ]; then
-    config=$z
-    break
-  fi
-done
-SSID=($(grep 'name="SSID"' $config | sed "s/.*>&quot;//;s/&quot;.*//;s/ /-_-/g"))
-PSK=($(grep 'name="PreSharedKey"' $config | sed "s/<null.*/\e[01;30mNONE\e[00;37;40m/;s/.*>&quot;/\e[01;32m/;s/&quot;.*/\e[00;37;40m/;s/ /-_-/g"))
+// Original version/source
+// [ "$(whoami)" != "root" ] && { echo "root required"; exit 1; }
+// configs=( /data/misc/wifi/WifiConfigStore.xml /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml )
+// for z in ${configs[@]}; do
+//   if [ -f $z ]; then
+//     config=$z
+//     break
+//   fi
+// done
+// SSID=($(grep 'name="SSID"' $config | sed "s/.*>&quot;//;s/&quot;.*//;s/ /-_-/g"))
+// PSK=($(grep 'name="PreSharedKey"' $config | sed "s/<null.*/\e[01;30mNONE\e[00;37;40m/;s/.*>&quot;/\e[01;32m/;s/&quot;.*/\e[00;37;40m/;s/ /-_-/g"))
 
-echo "WiFi Password Viewer"
-echo "veez21 @ xda-developers\n"
+// echo "WiFi Password Viewer"
+// echo "veez21 @ xda-developers\n"
 
-for i in ${!SSID[@]}; do
-  echo "\e[01;37m${SSID[$i]}\e[00;37;40m - ${PSK[$i]}" | sed "s/-_-/ /g"
-done
+// for i in ${!SSID[@]}; do
+//   echo "\e[01;37m${SSID[$i]}\e[00;37;40m - ${PSK[$i]}" | sed "s/-_-/ /g"
+// done
+
+const os = require("os");
+const fs = require("fs");
+const convert = require("xml-js");
+
+if (os.userInfo().username != "root") {
+  console.log("Root required!");
+  process.exit(1);
+}
+
+const config = (() => {
+  try {
+    fs.accessSync("/data/misc/wifi/WifiConfigStore.xml", fs.constants.R_OK);
+    return fs.readFileSync("/data/misc/wifi/WifiStore.xml", "utf8");
+  } catch (err) {
+    try {
+      fs.accessSync(
+        "/data/misc/apexdata/com.android.wifi/WifiConfigStore.xml",
+        fs.constants.R_OK
+      );
+      return fs.readFileSync(
+        "/data/misc/apexdata/com.android.wifi/WifiConfigStore.xml",
+        "utf8"
+      );
+    } catch (err) {
+      console.error("Unable to find WifiConfigStore");
+      process.exit(1);
+    }
+  }
+})();
+
+console.log("WiFi Password Viewer");
+console.log("veez21 @ xda-developers\n");
+
+var result = JSON.parse(convert.xml2json(config, { compact: true, spaces: 4 }));
+
+const network = result.WifiConfigStoreData.NetworkList.Network;
+
+const wifis = network.map((n) => {
+  const find = (string) => {
+    return n.WifiConfiguration.string.find(
+      (s) => s._attributes.name === string
+    );
+  };
+
+  return {
+    ssid: find("SSID")._text.replace(/"(.+)"/g, "$1"),
+    psk: find("PreSharedKey")?._text.replace(/"(.+)"/g, "$1") || "\x1b[90mNONE",
+  };
+});
+
+wifis.map((wifi) => {
+  console.log(`\x1b[1m${wifi.ssid}\x1b[0m - \x1b[32m${wifi.psk}\x1b[0m`);
+});
