@@ -1,0 +1,17 @@
+{
+  "name": "com.googler.audiotools",
+  "version": "1.0.0",
+  "bin": {
+    "playaudio": "./src/play-audio"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "play-audio",
+    "audio-tools"
+  ],
+  "author": "Der_Googler"
+}
