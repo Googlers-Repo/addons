@@ -1,0 +1,1 @@
+INPUT(-lSDL_image-orig -ltiff -ljpeg -lpng -lz)

@@ -1,6 +1,6 @@
 {
   "name": "com.googler.audiotools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "playaudio": "./src/play-audio"
   },
@@ -13,5 +13,11 @@
     "play-audio",
     "audio-tools"
   ],
-  "author": "Der_Googler"
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64"
+  ]
 }

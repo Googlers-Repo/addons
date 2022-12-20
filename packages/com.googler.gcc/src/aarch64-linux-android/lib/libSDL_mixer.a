@@ -1,0 +1,1 @@
+INPUT(-lSDL_mixer-orig -lsmpeg -lvorbisfile -lvorbis -logg -lstdc++)

@@ -1,0 +1,1 @@
+INPUT(-lSDL-orig -llog -ldl -lm)

@@ -1,0 +1,41 @@
+{
+  "name": "com.googler.gcc",
+  "description": "Android Toolchain",
+  "version": "1.0.2",
+  "bin": {
+    "aarch64-linux-android-ar": "./src/bin/aarch64-linux-android-ar",
+    "aarch64-linux-android-as": "./src/bin/aarch64-linux-android-as",
+    "aarch64-linux-android-g++": "./src/bin/aarch64-linux-android-g++",
+    "aarch64-linux-android-gcc": "./src/bin/aarch64-linux-android-gcc",
+    "aarch64-linux-android-gcov-dump": "./src/bin/aarch64-linux-android-gcov-dumb",
+    "aarch64-linux-android-gcov-tool": "./src/bin/aarch64-linux-android-gcov-tool",
+    "aarch64-linux-android-ld": "./src/bin/aarch64-linux-android-ld",
+    "aarch64-linux-android-nm": "./src/bin/aarch64-linux-android-nm",
+    "aarch64-linux-android-ranlib": "./src/bin/aarch64-linux-android-ranlib",
+    "aarch64-linux-android-strip": "./src/bin/aarch64-linux-android-strip",
+    "m4": "./src/bin/m4",
+    "make": "./src/bin/make",
+    "pkg-config": "./src/bin/pkg-config",
+    "ar": "./src/bin/aarch64-linux-android/ar",
+    "as": "./src/bin/aarch64-linux-android/as",
+    "cc": "./src/bin/aarch64-linux-android/cc",
+    "cmake": "./src/bin/aarch64-linux-android/cmake",
+    "g++": "./src/bin/aarch64-linux-android/g++",
+    "gcc": "./src/bin/aarch64-linux-android/gcc",
+    "ld": "./src/bin/aarch64-linux-android/ld",
+    "nm": "./src/bin/aarch64-linux-android/nm",
+    "ranlib": "./src/bin/aarch64-linux-android/ranlib",
+    "strip": "./src/bin/aarch64-linux-android/strip"
+  },
+  "keywords": [
+    "magisk",
+    "android"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}
