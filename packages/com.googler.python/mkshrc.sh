@@ -1,0 +1,1 @@
+export PYTHONHOME="$PWD/python3.4.2"
