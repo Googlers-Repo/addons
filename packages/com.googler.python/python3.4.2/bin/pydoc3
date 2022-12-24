@@ -1,0 +1,5 @@
+#!/system/bin/env python3.4
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
