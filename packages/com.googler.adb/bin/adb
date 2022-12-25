@@ -1,0 +1,22 @@
+#!/system/bin/sh
+dir="$(cd "$(dirname $(realpath "$0"))"; pwd)";
+
+ABILONG=$(getprop ro.product.cpu.abi)
+ARCH="arm"
+case "$ABILONG" in
+"x86")
+    # ARCH="x86"
+    echo "ADB isn't in x86 available"
+    exit 0
+    ;;
+"arm64-v8a")
+    ARCH="arm64"
+    ;;
+"x86_64")
+    # ARCH="x64"
+    echo "ADB isn't in x64 available"
+    exit 0
+    ;;
+esac
+
+exec $dir/adb-$ARCH.bin "$@";

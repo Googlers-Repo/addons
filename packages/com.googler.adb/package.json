@@ -1,0 +1,24 @@
+{
+  "name": "com.googler.adb",
+  "version": "1.0.0",
+  "bin": {
+    "adb": "./bin/adb",
+    "fastboot": "./bin/fastboot"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "adb"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.heimdall",
+  "version": "1.0.0",
+  "bin": {
+    "heimdall": "./bin/heimdall"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "heimdall"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}

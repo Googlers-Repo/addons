@@ -1,0 +1,20 @@
+{
+  "name": "com.googler.energized",
+  "version": "1.0.1",
+  "bin": {
+    "ep": "./bin/energized",
+    "energized": "./bin/energized"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "energized"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ]
+}
