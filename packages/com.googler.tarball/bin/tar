@@ -15,4 +15,4 @@ case "$ABILONG" in
     ;;
 esac
 
-exec $dir/wavemon-$ARCH.bin "$@";
+exec $dir/tar-$ARCH.bin "$@";
