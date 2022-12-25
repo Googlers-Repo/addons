@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.openssl",
+  "version": "1.0.0",
+  "bin": {
+    "openssl": "./bin/openssl"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "openssl"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.jq",
+  "version": "1.0.1",
+  "bin": {
+    "jq": "./bin/jq"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "jq"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}

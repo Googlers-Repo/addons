@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.curl",
+  "version": "1.0.1",
+  "bin": {
+    "curl": "./bin/curl"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "curl"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}

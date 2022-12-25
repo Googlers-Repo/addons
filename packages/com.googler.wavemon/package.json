@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.wavemon",
+  "version": "1.0.1",
+  "bin": {
+    "wavemon": "./bin/wavemon"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "wavemon"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "com.googler.tarball",
+  "version": "1.0.1",
+  "bin": {
+    "tar": "./bin/tar"
+  },
+  "keywords": [
+    "magisk",
+    "android",
+    "bin",
+    "shell",
+    "superuser",
+    "tar"
+  ],
+  "author": "Der_Googler",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64",
+    "arm",
+    "x64",
+    "x86"
+  ]
+}
