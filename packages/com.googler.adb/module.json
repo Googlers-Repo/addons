@@ -1,1 +1,15 @@
-
+{
+    "name": "adb",
+    "version": 1,
+    "description": "Android Debug Bridge for Android",
+    "bin": {
+        "arm": [
+            "/bin/adb-arm64.bin",
+            "/bin/fastboot-arm64.bin"
+        ],
+        "arm64": [
+            "/bin/adb-arm.bin",
+            "/bin/fastboot-arm.bin"
+        ]
+    }
+}
