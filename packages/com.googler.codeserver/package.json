@@ -1,9 +1,9 @@
 {
     "name": "com.googler.codeserver",
     "description": "Android Code Server",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "bin": {
-        "code-server": "./src/out/node/entry.js"
+        "code-server": "./src/bin/code-server"
     },
     "keywords": [
         "magisk",

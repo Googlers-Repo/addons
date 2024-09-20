@@ -1,5 +1,5 @@
-#!/system/bin/sh
-set -eu
+#!/system/bin/bash
+set -e
 
 # This script is intended to be bundled into the standalone releases.
 # Runs code-server with the bundled node binary.
@@ -25,4 +25,8 @@ root() {
 }
 
 ROOT="$(root)"
+
+export LD_LIBRARY_PATH="$(find $ROOT/node_modules -name '*.node' -exec dirname {} \; | sort -u | tr '\n' ':' | sed 's/:$//'):$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH%:}"
+
 exec "node" "$ROOT" "$@"
