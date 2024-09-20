@@ -1,7 +1,7 @@
 {
   "name": "com.googler.gcc",
   "description": "Android Toolchain",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
     "aarch64-linux-android-ar": "./src/bin/aarch64-linux-android-ar",
     "aarch64-linux-android-as": "./src/bin/aarch64-linux-android-as",
@@ -25,7 +25,10 @@
     "ld": "./src/aarch64-linux-android/bin/ld",
     "nm": "./src/aarch64-linux-android/bin/nm",
     "ranlib": "./src/aarch64-linux-android/bin/ranlib",
-    "strip": "./src/aarch64-linux-android/bin/strip"
+    "strip": "./src/aarch64-linux-android/bin/strip",
+    "cc1": "./src/libexec/gcc/aarch64-linux-android/10.2.0/cc1",
+    "cc1plus": "./src/libexec/gcc/aarch64-linux-android/10.2.0/cc1plus",
+    "collect2": "./src/libexec/gcc/aarch64-linux-android/10.2.0/collect2"
   },
   "keywords": [
     "magisk",
