@@ -1,7 +1,7 @@
 {
   "name": "com.googler.gcc",
   "description": "Android Toolchain",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "bin": {
     "aarch64-linux-android-ar": "./src/bin/aarch64-linux-android-ar",
     "aarch64-linux-android-as": "./src/bin/aarch64-linux-android-as",
