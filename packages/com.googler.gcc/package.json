@@ -1,7 +1,7 @@
 {
   "name": "com.googler.gcc",
   "description": "Android Toolchain",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": {
     "aarch64-linux-android-ar": "./src/bin/aarch64-linux-android-ar",
     "aarch64-linux-android-as": "./src/bin/aarch64-linux-android-as",
@@ -16,16 +16,16 @@
     "m4": "./src/bin/m4",
     "make": "./src/bin/make",
     "pkg-config": "./src/bin/pkg-config",
-    "ar": "./src/bin/aarch64-linux-android/ar",
-    "as": "./src/bin/aarch64-linux-android/as",
-    "cc": "./src/bin/aarch64-linux-android/cc",
-    "cmake": "./src/bin/aarch64-linux-android/cmake",
-    "g++": "./src/bin/aarch64-linux-android/g++",
-    "gcc": "./src/bin/aarch64-linux-android/gcc",
-    "ld": "./src/bin/aarch64-linux-android/ld",
-    "nm": "./src/bin/aarch64-linux-android/nm",
-    "ranlib": "./src/bin/aarch64-linux-android/ranlib",
-    "strip": "./src/bin/aarch64-linux-android/strip"
+    "ar": "./src/aarch64-linux-android/bin/ar",
+    "as": "./src/aarch64-linux-android/bin/as",
+    "cc": "./src/aarch64-linux-android/bin/cc",
+    "cmake": "./src/aarch64-linux-android/bin/cmake",
+    "g++": "./src/aarch64-linux-android/bin/g++",
+    "gcc": "./src/aarch64-linux-android/bin/gcc",
+    "ld": "./src/aarch64-linux-android/bin/ld",
+    "nm": "./src/aarch64-linux-android/bin/nm",
+    "ranlib": "./src/aarch64-linux-android/bin/ranlib",
+    "strip": "./src/aarch64-linux-android/bin/strip"
   },
   "keywords": [
     "magisk",
