@@ -1,0 +1,204 @@
+{
+  "name": "vscode-extensions",
+  "version": "0.0.1",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "vscode-extensions",
+      "version": "0.0.1",
+      "hasInstallScript": true,
+      "license": "MIT",
+      "dependencies": {
+        "typescript": "4.8.4"
+      },
+      "devDependencies": {
+        "@parcel/watcher": "2.0.5",
+        "esbuild": "^0.11.12",
+        "vscode-grammar-updater": "^1.1.0"
+      }
+    },
+    "node_modules/@parcel/node-addon-api": {
+      "extraneous": true
+    },
+    "node_modules/@parcel/watcher": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/@parcel/watcher/-/watcher-2.0.5.tgz",
+      "integrity": "sha512-x0hUbjv891omnkcHD7ZOhiyyUqUUR6MNjq89JhEI3BxppeKWAm6NPQsqqRrAkCJBogdT/o/My21sXtTI9rJIsw==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "dependencies": {
+        "node-addon-api": "^3.2.1",
+        "node-gyp-build": "^4.3.0"
+      },
+      "engines": {
+        "node": ">= 10.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/parcel"
+      }
+    },
+    "node_modules/coffeescript": {
+      "version": "1.12.7",
+      "resolved": "https://registry.npmjs.org/coffeescript/-/coffeescript-1.12.7.tgz",
+      "integrity": "sha512-pLXHFxQMPklVoEekowk8b3erNynC+DVJzChxS/LCBBgR6/8AJkHivkm//zbowcfc7BTCAjryuhx6gPqPRfsFoA==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "cake": "bin/cake",
+        "coffee": "bin/coffee"
+      },
+      "engines": {
+        "node": ">=0.8.0"
+      }
+    },
+    "node_modules/cson-parser": {
+      "version": "4.0.9",
+      "resolved": "https://registry.npmjs.org/cson-parser/-/cson-parser-4.0.9.tgz",
+      "integrity": "sha512-I79SAcCYquWnEfXYj8hBqOOWKj6eH6zX1hhX3yqmS4K3bYp7jME3UFpHPzu3rUew0oyfc0s8T6IlWGXRAheHag==",
+      "dev": true,
+      "license": "BSD-3-Clause",
+      "dependencies": {
+        "coffeescript": "1.12.7"
+      },
+      "engines": {
+        "node": ">=10.13"
+      }
+    },
+    "node_modules/esbuild": {
+      "version": "0.11.23",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.11.23.tgz",
+      "integrity": "sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "bin": {
+        "esbuild": "bin/esbuild"
+      }
+    },
+    "node_modules/fast-plist": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/fast-plist/-/fast-plist-0.1.2.tgz",
+      "integrity": "sha1-pFr/NFGWAG1AbKbNzQX2kFHvNbg=",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/node-addon-api": {
+      "version": "3.2.1",
+      "resolved": "https://registry.npmjs.org/node-addon-api/-/node-addon-api-3.2.1.tgz",
+      "integrity": "sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/node-gyp-build": {
+      "version": "4.3.0",
+      "resolved": "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.3.0.tgz",
+      "integrity": "sha512-iWjXZvmboq0ja1pUGULQBexmxq8CV4xBhX7VDOTbL7ZR4FOowwY/VOtRxBN/yKxmdGoIp4j5ysNT4u3S2pDQ3Q==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "node-gyp-build": "bin.js",
+        "node-gyp-build-optional": "optional.js",
+        "node-gyp-build-test": "build-test.js"
+      }
+    },
+    "node_modules/typescript": {
+      "version": "4.8.4",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz",
+      "integrity": "sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==",
+      "license": "Apache-2.0",
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=4.2.0"
+      }
+    },
+    "node_modules/vscode-grammar-updater": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/vscode-grammar-updater/-/vscode-grammar-updater-1.1.0.tgz",
+      "integrity": "sha512-rWcJXyEFK27Mh9bxfBTLaul0KiGQk0GMXj2qTDH9cy3UZVx5MrF035B03os1w4oIXwl/QDhdLnsBK0j2SNiL1A==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "cson-parser": "^4.0.9",
+        "fast-plist": "0.1.2"
+      },
+      "bin": {
+        "vscode-grammar-updater": "bin.js"
+      }
+    }
+  },
+  "dependencies": {
+    "@parcel/node-addon-api": {
+      "extraneous": true
+    },
+    "@parcel/watcher": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/@parcel/watcher/-/watcher-2.0.5.tgz",
+      "integrity": "sha512-x0hUbjv891omnkcHD7ZOhiyyUqUUR6MNjq89JhEI3BxppeKWAm6NPQsqqRrAkCJBogdT/o/My21sXtTI9rJIsw==",
+      "dev": true,
+      "requires": {
+        "node-addon-api": "^3.2.1",
+        "node-gyp-build": "^4.3.0"
+      }
+    },
+    "coffeescript": {
+      "version": "1.12.7",
+      "resolved": "https://registry.npmjs.org/coffeescript/-/coffeescript-1.12.7.tgz",
+      "integrity": "sha512-pLXHFxQMPklVoEekowk8b3erNynC+DVJzChxS/LCBBgR6/8AJkHivkm//zbowcfc7BTCAjryuhx6gPqPRfsFoA==",
+      "dev": true
+    },
+    "cson-parser": {
+      "version": "4.0.9",
+      "resolved": "https://registry.npmjs.org/cson-parser/-/cson-parser-4.0.9.tgz",
+      "integrity": "sha512-I79SAcCYquWnEfXYj8hBqOOWKj6eH6zX1hhX3yqmS4K3bYp7jME3UFpHPzu3rUew0oyfc0s8T6IlWGXRAheHag==",
+      "dev": true,
+      "requires": {
+        "coffeescript": "1.12.7"
+      }
+    },
+    "esbuild": {
+      "version": "0.11.23",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.11.23.tgz",
+      "integrity": "sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==",
+      "dev": true
+    },
+    "fast-plist": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/fast-plist/-/fast-plist-0.1.2.tgz",
+      "integrity": "sha1-pFr/NFGWAG1AbKbNzQX2kFHvNbg=",
+      "dev": true
+    },
+    "node-addon-api": {
+      "version": "3.2.1",
+      "resolved": "https://registry.npmjs.org/node-addon-api/-/node-addon-api-3.2.1.tgz",
+      "integrity": "sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==",
+      "dev": true
+    },
+    "node-gyp-build": {
+      "version": "4.3.0",
+      "resolved": "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.3.0.tgz",
+      "integrity": "sha512-iWjXZvmboq0ja1pUGULQBexmxq8CV4xBhX7VDOTbL7ZR4FOowwY/VOtRxBN/yKxmdGoIp4j5ysNT4u3S2pDQ3Q==",
+      "dev": true
+    },
+    "typescript": {
+      "version": "4.8.4",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz",
+      "integrity": "sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ=="
+    },
+    "vscode-grammar-updater": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/vscode-grammar-updater/-/vscode-grammar-updater-1.1.0.tgz",
+      "integrity": "sha512-rWcJXyEFK27Mh9bxfBTLaul0KiGQk0GMXj2qTDH9cy3UZVx5MrF035B03os1w4oIXwl/QDhdLnsBK0j2SNiL1A==",
+      "dev": true,
+      "requires": {
+        "cson-parser": "^4.0.9",
+        "fast-plist": "0.1.2"
+      }
+    }
+  }
+}
